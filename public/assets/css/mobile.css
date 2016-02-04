@@ -1,0 +1,73 @@
+/* #Site Styles // rewrite original
+================================================== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Tablet (Portrait) ------------------------------------- */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  body {
+    -webkit-text-size-adjust: none;
+    font-size: 100%;
+    line-height: 1em;
+    font-size: 1em;
+  }
+  #search {
+    margin-bottom: 1em !important;
+  }
+  #nav a {
+    padding: 6px 1px !important;
+    margin-right: 0;
+    font-size: .8em;
+  }
+}
+/* Mobile (Landscape) ------------------------------------- */
+@media only screen and (min-width: 480px) and (max-width: 568px) {
+  body {
+    -webkit-text-size-adjust: none;
+    font-size: 100%;
+    line-height: 1em;
+    font-size: 1em;
+  }
+}
+/* Mobile ((Portrait) ------------------------------------- */
+@media only screen and (max-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+    font-size: 100%;
+    line-height: 1em;
+    font-size: 1em;
+    padding-top: 170px;
+  }
+  #headerContainer {
+    margin-top: -170px;
+    position: relative;
+  }
+  #headerContainer .row div:nth-child(2) {
+    float: left;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: -1.5em;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  #search {
+    float: left;
+    width: 100%;
+  }
+  #nav {
+    margin-top: -2em;
+  }
+  #nav a {
+    padding: 6px 4px;
+    margin-right: 0;
+    font-size: .9em;
+  }
+  #footerContainer .more-buttons .btn {
+    width: 40%;
+    min-width: 40%;
+    font-size: .8em;
+    margin: 0;
+  }
+}

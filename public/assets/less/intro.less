@@ -1,0 +1,63 @@
+
+/* intro block - most pages should have this */
+
+@intro-yellow: #af9d54;
+
+#intro {
+  background: @light-yellow;
+  background-size: contain;
+  border-bottom: 10px solid darken(@dark-yellow,10%);
+  border-top: 3px solid darken(@dark-yellow,10%);
+  .inset-gradient(darken(@light-yellow,45%));
+  clear: both;
+  
+  h3 {
+    border-top: 10px solid @intro-yellow;
+    padding: 6px 0;
+  }
+  h4 {
+    color: @intro-yellow;
+  }
+  blockquote {
+    border-color: lighten(@intro-yellow,20%);
+    footer {
+      color: @intro-yellow;
+    }
+  }
+}
+
+.democrat #intro {
+  background: #eee;
+  border-bottom: 10px solid @dem-blue;
+  .inset-gradient(#999);
+  h3 {
+    border-top-color: @dem-blue;
+  }
+  h4 {
+    color: @dem-blue;
+  }
+  blockquote {
+    border-color: lighten(@dem-blue,20%);
+    footer {
+      color: @dem-blue;
+    }
+  }
+}
+
+.republican #intro {
+  background: #eee;
+  border-bottom: 10px solid @rep-red;
+  .inset-gradient(#999);
+  h3 {
+    border-top-color: @rep-red;
+  }
+  h4 {
+    color: @rep-red;
+  }
+  blockquote {
+    border-color: lighten(@rep-red,20%);
+    footer {
+      color: @rep-red;
+    }
+  }
+}

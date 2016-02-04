@@ -1,0 +1,1046 @@
+/* JKW Netintelpro.com 7/14*/
+/*
+so anchor links to comments (or anything else) will center anchor link in page upon refresh
+http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
+*/
+
+
+#trending{
+
+padding: 12px 0 12px 0 !important;
+}
+
+
+#latest{
+	padding-top: 0px !important;
+}
+
+#intro {
+	padding: 20px 0px 0px 0 !important;
+}
+/*Autocomplete*/
+
+
+
+
+
+/* highlight results */
+.ui-autocomplete span.hl_results {
+    background-color: #ffff66;
+}
+ 
+/* loading - the AJAX indicator */
+.ui-autocomplete-loading {
+    background: white url('../img/ui-anim_basic_16x16.gif') right center no-repeat;
+}
+ 
+/* scroll results */
+.ui-autocomplete {
+    max-height: 250px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding for vertical scrollbar */
+    padding-right: 5px;
+}
+ 
+.ui-autocomplete li {
+    font-size: 16px;
+}
+ 
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+    height: 250px;
+}
+/***End Auto complete****/
+
+
+.above-fold-thumbs-up {
+top: -10px;
+left: -70px;
+position: relative;
+}
+.above-fold-thumbs-down{
+position: relative;
+/*top: -46px;
+left: 10px;*/
+top: -52px;
+left: 3px;
+}
+
+.above-fold-thumbs{}
+.thumbs {
+	right: -0.5em !important;
+}
+
+.sprite.thumbs-down {
+  background: url("../images/fbish-like.png") no-repeat !important;
+ /*background-position: -18px 0px !important;*/
+background-position: -29px !important;
+/*  width: 50px !important;*/
+width: 33px  !important;
+ /* height: 34px !important;*/
+height: 40px !important;
+}
+
+.sprite.thumbs-down-grey {
+  background: url("../images/fbish-like-grey.png") no-repeat !important;
+ /*background-position: -18px 0px !important;*/
+background-position: -29px !important;
+/*  width: 50px !important;*/
+width: 33px  !important;
+ /* height: 34px !important;*/
+height: 40px !important;
+}
+
+.sprite.thumbs-up-grey {
+  background: url("../images/fbish-like-grey.png") no-repeat !important;
+/* background-position: 44px 0px !important;*/
+background-position: 40px 0px !important; 
+  width: 66px !important;
+ /* height: 34px !important;*/
+height: 40px !important;
+}
+
+.sprite.thumbs-up {
+  background: url("../images/fbish-like.png") no-repeat !important;
+/* background-position: 44px 0px !important;*/
+background-position: 40px 0px !important; 
+  width: 66px !important;
+ /* height: 34px !important;*/
+height: 40px !important;
+}
+
+#issues{padding-top: 26px !important;}
+.center-title{margin-bottom: 0.5em !important;}
+#pageContainer #issues h3 {margin-bottom: 0.5em !important;}
+.center-block {float: none !important} 
+
+
+.btn-issue{display:none;float:left;padding: 10px 2px 0px 4px;}
+
+
+
+a.anchor{display: block; position: relative; top: -250px; visibility: hidden;}
+
+#pageContainer.politicians{
+background: #ddd;}
+
+/* Politician inner photo*/
+#pageContainer #intro .politician-inner {
+border: 3px solid #000;
+}
+.politician-inner {
+border: 3px solid #000;
+}
+/* Ratings stars */
+
+.star-rating-active s:hover:before, .star-rating s.rated:before {
+color: #aa8400 !important;
+}
+
+
+
+
+/* user profile intro section borders and background*/
+.republican #intro {border-bottom: 10px solid #bf0404 !important;}
+.democrat #intro {border-bottom: 10px solid #065eb7 !important;}
+
+#intro {
+border-top: 3px solid #775c00 !important;
+background: #eee !important;
+border-bottom: 10px solid #065eb7 !important;
+box-shadow: 0 20px 100px #999999 inset !important;
+}
+/********************************************************/
+
+.thumbs-up.glyphicon{display:none;}
+.news_content{display:none;}
+
+.news_headline{
+	color: #aa8400;
+	font-size:16px;
+}
+
+
+
+
+/*adds space between input fields on edit/create politician pages */
+.edit-politicians .form-control{
+	margin-bottom: 6px; 
+	margin-top:6px;
+}
+
+/*temporary*/
+
+.more-buttons{display:none;}
+.list-group .topics{display:none;}
+.create-politician-btn{margin-top: 76px !important;}
+
+#results .row{margin-top:6px; margin-bottom:6px;}
+
+
+/*Pagination*/
+.pagination>.active>a, .pagination>.active>span, 
+.pagination>.active>a:hover, .pagination>.active>span:hover,
+ .pagination>.active>a:focus, .pagination>.active>span:focus 
+{
+
+color: #fff;
+background-color: #aa8400;
+border-color: #aa8400;
+
+}
+
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+color: #aa8400;
+background-color: #eee;
+border-color: #ddd;
+}
+
+
+
+.pagination>li>a, .pagination>li>span {
+color: #aa8400;
+
+}
+
+/*modals*/
+
+.modal{z-index:999999999999999;margin-top: 200px;}
+.modal-title{color: #aa8400;}
+.modal .cancel{color: #333;
+background-color: #ebebeb;
+border-color: #adadad;
+}
+/********************************************************************/
+
+/* colors */
+.border-divider {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+.thick-top-border {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 5px solid #eee;
+}
+.thick-bottom-border {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid #eee;
+}
+/* boxes */
+/* gradients */
+/* -------- begin html tag settings --------- */
+BODY {
+  background: #555;
+  color: #333;
+  font-family: "Inder", Arial, Helvetica, sans-serif;
+  line-height: 1em;
+  text-align: center;
+  padding-top: 97px;
+}
+TD {
+  padding: 4px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Quando", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0 0 .2em 0;
+  padding: 0;
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span {
+  font-style: italic;
+}
+h1 {
+  color: #000;
+  font-size: 36px;
+}
+h2 {
+  color: #000;
+  font-size: 30px;
+}
+h2.center-title {
+  background: #c6c6c6;
+  text-align: center;
+  height: 10px;
+  line-height: 10px;
+  margin-bottom: 1.5em;
+}
+h2.center-title span {
+  background: #fff;
+  padding: 0 6px;
+  font-style: normal;
+}
+h3 {
+  color: #000;
+  font-family: "Inder", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+h3.popover-title {
+  font-family: "Quando", Arial, Helvetica, sans-serif;
+  background: #ebe2c3;
+}
+.popover.bottom > .arrow:after {
+  border-bottom-color: #ebe2c3;
+}
+h4 {
+  color: #91BAB3;
+  font-size: 18px;
+  margin: 1em 0;
+}
+h5 {
+  color: #D6AD0C;
+  font-size: 16px;
+}
+ul {
+  list-style-image: url("../images/double-arrow.png");
+  margin: 0 0 1em 0;
+}
+ol {
+  list-style: decimal;
+  margin: 0 0 1em 1.5em;
+}
+ul > li,
+ol > li {
+  margin-bottom: 1em;
+}
+ol ol {
+  list-style: upper-alpha;
+}
+ol ol ol {
+  list-style: lower-roman;
+}
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-bottom: 0;
+}
+p,
+li,
+blockquote {
+  line-height: 1.2em;
+  margin: 0 0 1em 0;
+}
+.list-unstyled {
+  margin-left: 0;
+}
+a {
+  color: #aa8400;
+  cursor: pointer;
+}
+a:visited {
+  color: #aa8400;
+}
+a:hover,
+a:active {
+  color: #300;
+  text-decoration: none;
+}
+hr {
+  display: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  padding: 4px;
+}
+/* Text meant only for screen readers */
+.screen-reader-text {
+  position: absolute;
+  left: -9000px;
+}
+/* ---------- begin structural settings ---------------- */
+#container {
+  font-size: 16px;
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+}
+section,
+.section {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+#pageContainer section {
+  padding: 50px 0;
+}
+#pageContainer section:last-child {
+  padding-bottom: 70px;
+}
+.container {
+  position: relative;
+  text-align: left;
+}
+#headerContainer {
+  background: url("../images/header-bg.png");
+  border-bottom: 1px solid #999;
+  position: fixed;
+  margin-top: -97px;
+  z-index: 2000;
+}
+#headerContainer #accountContainer {
+  background: #000;
+}
+#headerContainer #accountContainer .menu {
+  float: right;
+}
+#headerContainer #accountContainer a {
+  border-right: 1px solid #ddd;
+  color: #ddd;
+  font-size: 13px;
+  line-height: 1em;
+  margin: 6px 0;
+  padding: 1px 7px;
+  display: block;
+}
+#headerContainer #accountContainer li:last-child a {
+  border: 0;
+  padding-right: 0;
+}
+#headerContainer #header {
+  display: block;
+}
+#headerContainer #logo {
+  float: left;
+  max-height: 50px;
+  width: auto;
+  margin: 10px 0;
+}
+#headerContainer #search {
+  margin: 10px 0 0 0;
+}
+#headerContainer #search .form-group,
+#headerContainer #search .form-control {
+  clear: both;
+  position: relative;
+  width: 100%;
+}
+#headerContainer #search .form-control {
+  border: 1px solid #000;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+#headerContainer #search .form-control:focus {
+  box-shadow: 0 0 8px #efba03;
+}
+#headerContainer #search .sprite {
+  background-color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  padding-left: 2px;
+}
+#headerContainer #nav {
+  float: right;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 16px;
+}
+#headerContainer #nav ul {
+  margin: 0 auto;
+}
+#headerContainer #nav ul li {
+  position: relative;
+}
+#headerContainer #nav a {
+  color: #000;
+  display: block;
+  padding: 10px 12px;
+  margin-right: 4px;
+  text-decoration: none;
+  position: relative;
+}
+#headerContainer #nav .selected {
+  color: #555;
+}
+#headerContainer #nav a:hover,
+#headerContainer #nav a:active,
+#headerContainer #nav li:hover {
+  color: #6f5703;
+}
+#headerContainer #nav li ul.sub-menu {
+  border: 1px solid #59768c;
+  border-top: 0;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  z-index: 2000;
+  width: 201px;
+}
+#headerContainer #nav li ul.sub-menu li {
+  border-left: 1px solid #59768c;
+  background: none;
+  clear: both;
+  font-size: .9em;
+  text-align: left;
+  width: 204px;
+}
+#headerContainer #nav li ul.sub-menu a {
+  background: #7d9db4;
+  border-top: 1px solid #59768c;
+  padding: 8px 12px;
+}
+#headerContainer #nav li ul.sub-menu a:hover,
+#headerContainer #nav li ul.sub-menu a:active {
+  background: #59768c;
+}
+#headerContainer #nav li ul.sub-menu {
+  display: none;
+}
+#headerContainer #nav li:hover ul.sub-menu {
+  display: block;
+}
+#headerContainer .mobile-nav {
+  background: url("/images/mobile-nav.png") center center no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin: 10px 10px 0 0;
+  display: none;
+  float: right;
+  z-index: 1000;
+}
+#pageContainer {
+  background: #fff;
+  text-align: left;
+}
+#sidebar {
+  float: right;
+  margin: 50px 0;
+  width: 25%;
+}
+#sidebar h2 {
+  padding: 20px 0 0 0;
+}
+#sidebar ul li {
+  width: 100%;
+  /* for ie 7 */
+}
+#footerContainer {
+  background: url("../images/footer-bg.jpg") center center;
+  background-size: cover;
+  border-top: 3px solid #000;
+  color: #bbb;
+  font-size: 14px;
+  padding: 50px 0 0 0;
+}
+#footerContainer h3 {
+  color: #fff;
+}
+#footerContainer a {
+  color: #bbb;
+}
+#footerContainer a:hover {
+  color: #fff;
+}
+#footerContainer .btn {
+  color: #efba03;
+}
+#footerContainer ul {
+  margin: 0;
+  padding: 0 0 0 22px;
+}
+#footerContainer .more-buttons {
+  text-align: center;
+  margin: -78px 0 40px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+#footerContainer .more-buttons .btn {
+  min-width: 165px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#bottom {
+  background: #474747;
+  margin-top: 40px;
+  margin-bottom: -1px;
+  padding: 10px 0;
+  color: #999;
+  font-size: 13px;
+}
+.copyright {
+  float: left;
+  line-height: 30px;
+}
+.credit {
+  float: left;
+  margin-left: 20px;
+  line-height: 30px;
+}
+#bottom a {
+  color: #999;
+}
+.informed {
+  float: right;
+}
+.informed a {
+  padding: 0 0 0 3px;
+}
+.nav,
+.nav ul,
+.menu,
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+.nav li,
+.menu li {
+  float: left;
+  list-style: none;
+  margin: 0;
+}
+.nav a,
+.menu a {
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.date,
+.help {
+  color: #777;
+  font-size: .9em;
+}
+.divider {
+  border-bottom: 3px dashed #aa8400;
+  clear: both;
+  margin-bottom: 16px;
+  padding-top: 4px;
+}
+.popover,
+.popover[class*="tour-"] {
+  z-index: 10000;
+}
+#recommended {
+  background: #ebe2c3;
+  border-top: 10px solid #ded09d;
+  border-bottom: 10px solid #ded09d;
+  padding: 30px 0 30px 0;
+}
+#recommended h3 {
+  margin: 4px 0 0 0;
+}
+/* buttons */
+.btn {
+  background-color: #000;
+  color: #efba03;
+}
+.btn.vote,
+.btn.follow {
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+a.btn-lg,
+input[type="submit"],
+button.btn-lg,
+span.btn-lg {
+  color: #efba03;
+  border: 3px solid #000;
+  background: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a.btn.light,
+span.btn.light,
+.politician .btn,
+.btn.active,
+.btn.light {
+  color: #000 !important;
+  background: #efba03;
+}
+input[type="submit"],
+button.btn-lg {
+  padding: 4px 16px;
+}
+a.btn-lg:hover,
+input[type="submit"]:hover,
+button.btn-lg:hover,
+span.btn-lg:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+.btn-tag {
+  background-color: #fff;
+  border: 1px solid #999;
+  margin-bottom: 4px;
+}
+.button-checkbox .btn {
+  border: 0;
+  margin-bottom: 6px;
+}
+/* sprites */
+.sprite {
+  background: url("../images/sprite.png") no-repeat;
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  display: inline-block;
+}
+.sprite.trend-up {
+  background-position: -105px 0px;
+  height: 14px;
+}
+.sprite.trend-down {
+  background-position: -133px 0px;
+  height: 14px;
+}
+.sprite.trend-up-stat,
+.sprite.trend-down-stat {
+  width: 43px;
+  height: 43px;
+  text-align: center;
+  font-size: 16px;
+}
+.sprite.trend-up-stat.lg,
+.sprite.trend-down-stat.lg {
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+}
+.sprite.trend-up-stat {
+  background-position: -8px -5px;
+  color: #035717;
+  padding-top: 11px;
+}
+.sprite.trend-up-stat.lg {
+  background-position: -8px -55px;
+  padding-top: 13px;
+}
+.sprite.trend-down-stat {
+  background-position: -57px -5px;
+  color: #940101;
+  padding-top: 19px;
+}
+.sprite.trend-down-stat.lg {
+  background-position: -72px -55px;
+  padding-top: 25px;
+}
+.sprite.dem-lg {
+  background-position: -267px 0px;
+  height: 35px;
+  width: 35px;
+}
+.sprite.rep-lg {
+  background-position: -192px 0px;
+  width: 43px;
+  height: 43px;
+}
+.sprite.dem {
+  background-position: -237px 0px;
+  height: 25px;
+  width: 25px;
+}
+.sprite.rep {
+  background-position: -165px 0px;
+  width: 28px;
+  height: 25px;
+}
+.sprite.thumbs-down {
+  background-position: -331px 0px;
+  width: 16px;
+  height: 16px;
+}
+.sprite.thumbs-up {
+  background-position: -311px 0px;
+  width: 16px;
+  height: 16px;
+}
+.sprite.vote-up {
+  background-position: -394px 0px;
+  width: 15px;
+  height: 16px;
+}
+.sprite.vote-down {
+  background-position: -414px 0px;
+  width: 15px;
+  height: 16px;
+}
+.sprite.news {
+  background: none;
+  color: #efba03;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 47px;
+  height: 16px;
+}
+.sprite.search {
+  background-position: -357px 0px;
+  width: 24px;
+  height: 24px;
+}
+.topics,
+.voting,
+.replies {
+  font-size: 13px;
+}
+.topics .sprite,
+.voting .sprite,
+.replies .sprite {
+  margin-bottom: -4px;
+}
+.topics a {
+  padding-right: 6px;
+  display: inline-block;
+}
+.topics a.thumbs-up {
+  color: #197b30;
+}
+.topics a.thumbs-down {
+  color: #a23a3e;
+}
+.voting a,
+a.replies {
+  color: #999;
+}
+/* star ratings */
+.star-rating s,
+.star-rating-rtl s {
+  color: #aa8400;
+}
+/* images */
+.politician,
+.politician-inner,
+.article {
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.politician .vote,
+.politician-inner .vote,
+.article .vote,
+.politician .follow,
+.politician-inner .follow,
+.article .follow {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+}
+.politician .dem-lg,
+.politician-inner .dem-lg,
+.article .dem-lg,
+.politician .dem,
+.politician-inner .dem,
+.article .dem,
+.politician .rep-lg,
+.politician-inner .rep-lg,
+.article .rep-lg,
+.politician .rep,
+.politician-inner .rep,
+.article .rep,
+.politician .news,
+.politician-inner .news,
+.article .news {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.politician .trend-up-stat,
+.politician-inner .trend-up-stat,
+.article .trend-up-stat,
+.politician .trend-down-stat,
+.politician-inner .trend-down-stat,
+.article .trend-down-stat {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+}
+.politician-inner,
+.article-inner {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.politician-inner:hover {
+  background: none !important;
+}
+.img-circle {
+  box-shadow: 0 0 3px #ccc;
+}
+/* intro block - most pages should have this */
+#intro {
+  background: #ebe2c3;
+  background-size: contain;
+  border-bottom: 10px solid #775c00;
+  border-top: 3px solid #775c00;
+  box-shadow: 0 20px 100px #968032 inset;
+  clear: both;
+}
+#intro h3 {
+  border-top: 10px solid #af9d54;
+  padding: 6px 0;
+}
+#intro h4 {
+  color: #af9d54;
+}
+#intro blockquote {
+  border-color: #d0c599;
+}
+#intro blockquote footer {
+  color: #af9d54;
+}
+.democrat #intro {
+  background: #eee;
+  border-bottom: 10px solid #065eb7;
+  box-shadow: 0 20px 100px #999999 inset;
+}
+.democrat #intro h3 {
+  border-top-color: #065eb7;
+}
+.democrat #intro h4 {
+  color: #065eb7;
+}
+.democrat #intro blockquote {
+  border-color: #2b91f8;
+}
+.democrat #intro blockquote footer {
+  color: #065eb7;
+}
+.republican #intro {
+  background: #eee;
+  border-bottom: 10px solid #bf0404;
+  box-shadow: 0 20px 100px #999999 inset;
+}
+.republican #intro h3 {
+  border-top-color: #bf0404;
+}
+.republican #intro h4 {
+  color: #bf0404;
+}
+.republican #intro blockquote {
+  border-color: #fb2e2e;
+}
+.republican #intro blockquote footer {
+  color: #bf0404;
+}
+#slider,
+.cs {
+  background: #eee;
+  overflow: hidden;
+  width: 100%;
+}
+/* box item */
+.box-item {
+  background: #ffffff;
+  box-shadow: 0 0 3px #333333;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  overflow: hidden;
+  padding: 0 10px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.box-item .politician,
+.box-item .article {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 110%;
+  margin-left: -5%;
+  padding: 0;
+}
+.box-item .politician .sprite,
+.box-item .article .sprite {
+  right: 16px;
+}
+.box-item .politician .vote,
+.box-item .article .vote,
+.box-item .politician .follow,
+.box-item .article .follow {
+  left: 12px;
+}
+.box-item > .news {
+  float: right;
+  margin: 6px 0 0 0;
+}
+.box-item h2,
+.box-item h3 {
+  margin: 10px 0 0 0;
+}
+.box-item h2 a,
+.box-item h3 a {
+  color: #000;
+}
+.box-item .voting,
+.box-item .topics,
+.box-item .tags {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 110%;
+  margin-left: -5%;
+  line-height: 15px;
+}
+.box-item .voting .sprite,
+.box-item .topics .sprite,
+.box-item .tags .sprite {
+  margin-bottom: -4px;
+}
+.box-item .replies {
+  float: right;
+}
+#comments {
+  padding: 50px 0;
+}
+#comments #comment-form {
+  margin: 20px 0;
+}
+#comments #comment-form .form-group {
+  width: 100%;
+}
+#comments #comment-form .form-group textarea.form-control {
+  width: 100%;
+}
+#comments #comment-form .btn {
+  margin: 1em 0;
+}
+#comments .comment-meta {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+#comments .list-group-item {
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  border-top-width: 10px;
+  padding-top: 30px;
+  margin: 0 0 30px 0;
+}
+.lpcodekit-loading * {
+  transition: none !important;
+}

@@ -1,0 +1,39 @@
+/* colors */
+.border-divider {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+.thick-top-border {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 5px solid #eee;
+}
+.thick-bottom-border {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid #eee;
+}
+/* boxes */
+/* gradients */
+#pageContainer .form-control {
+  margin-bottom: 20px;
+}
+#pageContainer .topics {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 5px solid #eee;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid #eee;
+}
+#pageContainer .already {
+  margin-top: 20px;
+}
+#pageContainer .topics .btn {
+  background: #ccc;
+  color: #333;
+}
+#pageContainer .topics .btn:hover {
+  background: #ddd;
+  color: #000;
+}

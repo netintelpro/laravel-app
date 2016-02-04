@@ -1,0 +1,63 @@
+@import "variables.less";
+
+#pageContainer {
+  padding: 0;
+  
+  #top-politicians {
+    background: #555 url("../images/intro-bg.png") center center;
+    background-size: contain;
+    border: 3px solid #000;
+    border-right: 0;
+    border-left: 0;
+    padding: 0;
+    .politician {
+      border-left: 3px solid #000;
+      border-right: 3px solid #000;
+    }
+  }
+  
+  
+  #intro {
+    background: #fff;
+    box-shadow: none;
+    border: 0;
+  }
+  #intro h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  #intro .btn {
+    margin-top: 3em;
+  }
+  
+  
+  #trending {
+    background: url("../images/flag-bg.jpg") center center;
+    background-size: cover;
+    padding: 30px 0 50px 0;
+    border-bottom: 7px solid rgba(0,0,0,0.2);
+    border-top: 7px solid rgba(0,0,0,0.2);
+    font-size: 16px;
+  }
+  
+  
+  #latest {
+    background: #ddd;
+    h2 {
+      margin: 30px 0;
+    }
+  }
+  #latest h2.center-title span {
+    background: #ddd;
+  }
+}
+
+
+/* Mobile ((Portrait) ------------------------------------- */
+@media only screen and (max-width: 480px) {
+  #top-politicians {
+    .politician {
+      border-top: 3px solid #000;
+    }
+  }
+}

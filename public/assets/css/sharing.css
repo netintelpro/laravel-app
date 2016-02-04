@@ -1,0 +1,54 @@
+
+
+
+/* sharing icons */
+#sharing-icons {
+  position: fixed;
+  z-index: 1000;
+	top: 168px;
+	margin-left: -48px;
+}
+#sharing-icons a, #sharing-icons div {
+	background: url("../images/share.png") top left no-repeat;
+  display: block;
+  height: 23px;
+  margin-bottom: 4px;
+  width: 23px;
+	text-decoration: none;
+}
+#sharing-icons a#share-fb {background-position: 0 -57px;}
+#sharing-icons a:hover#share-fb {background-position: -23px -57px;}
+#sharing-icons a#share-tw {background-position: 0 -29px;}
+#sharing-icons a:hover#share-tw {background-position: -23px -29px;}
+#sharing-icons a#share-in {background-position: 0 0;}
+#sharing-icons a:hover#share-in {background-position: -23px 0;}
+#sharing-icons a#share-su {background-position: 0 -113px;}
+#sharing-icons a:hover#share-su {background-position: -23px -113px;}
+#sharing-icons a#share-pin {background-position: 0 -169px;}
+#sharing-icons a:hover#share-pin {background-position: -23px -169px;}
+#sharing-icons a#share-ma {background-position: 0 -141px;}
+#sharing-icons a:hover#share-ma {background-position: -23px -141px;}
+#sharing-icons a#share-goo {background-position: 0 -85px;}
+#sharing-icons a:hover#share-goo {background-position: -23px -85px;}
+.st_icon {
+  display: block;
+  height: 23px;
+  margin: 1px 0;
+  width: 23px;
+}
+.st_icon.st_email_large {background: url("../images/share.png") 0 -141px no-repeat}
+.st_icon.st_email_large:hover {background-position: -23px -141px;}
+.st_icon.st_sharethis_large {background: url("../images/share.png") 0 -195px no-repeat}
+.st_icon.st_sharethis_large:hover {background-position: -23px -195px;}
+.st_icon .stButton .stLarge {
+	background: none !important;
+}
+
+#sharing-icons .social-count-box-left {
+  background-position: 0 -228px;
+  float: left;
+  margin-left: -48px;
+  padding-left: 5px;
+  padding-top: 2px;
+  width: 41px;
+}

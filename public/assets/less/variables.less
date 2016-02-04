@@ -1,0 +1,64 @@
+@bodyfont: "Inder", Arial, Helvetica, sans-serif;
+@sansfont: "Inder", Arial, Helvetica, sans-serif;
+@headerfont: "Quando", Arial, Helvetica, sans-serif;
+@seriffont: "Quando", Arial, Helvetica, sans-serif;
+@small-font: 13px;
+
+/* colors */
+@dark-red: #a23a3e;
+@rep-red: #bf0404;
+@dem-blue: #065eb7;
+@green: #197b30;
+@dark-yellow: #aa8400;
+@yellow: #efba03;
+@light-yellow: #ebe2c3;
+@transparent-black: url("/images/transparent-black.png");
+@transparent-white: url("/images/transparent-white.png");
+
+@standard-padding: 50px 0;
+
+.border-divider { 
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.thick-top-border {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 5px solid #eee;
+}
+.thick-bottom-border {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid #eee;
+}
+
+.border-radius(@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.extend-width() {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 110%;
+  margin-left: -5%;
+}
+
+/* boxes */
+.rounded-box(@bg,@shadow) {  
+  background: @bg;
+  box-shadow: 0 0 3px @shadow;
+  .border-radius(8px);
+  overflow: hidden;
+  padding: 0 10px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+
+/* gradients */
+.inset-gradient(@color) {  
+  box-shadow: 0 20px 100px @color inset;
+}

@@ -1,0 +1,45 @@
+/* box item */
+.box-item {
+  .rounded-box(#fff,#333);
+ 
+  .politician, .article {
+    .extend-width();
+    padding: 0;
+    .sprite {
+      right: 16px;
+    }
+    .vote, .follow {
+      left: 12px;
+    }
+  }
+  > .news {
+    float: right;
+    margin: 6px 0 0 0;
+  }
+  
+  h2, h3 {
+    a {color: #000;}
+    margin: 10px 0 0 0;  
+  } 
+  
+  .commenter {
+  }
+  
+  .voting, .topics, .tags {
+    .border-divider();  
+    display: inline-block;
+    padding-bottom: 10px;
+    .extend-width();
+    line-height: 15px;    
+    
+    .sprite {
+      margin-bottom: -4px;
+    }
+  }
+  
+  
+  .replies {
+    float: right;
+  }
+  
+}

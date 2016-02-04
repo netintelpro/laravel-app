@@ -1,0 +1,67 @@
+/* colors */
+.border-divider {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+.thick-top-border {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 5px solid #eee;
+}
+.thick-bottom-border {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid #eee;
+}
+/* boxes */
+/* gradients */
+#pageContainer {
+  padding: 0;
+}
+#pageContainer #top-politicians {
+  background: #555555 url("../images/intro-bg.png") center center;
+  background-size: contain;
+  border: 3px solid #000;
+  border-right: 0;
+  border-left: 0;
+  padding: 0;
+}
+#pageContainer #top-politicians .politician {
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+}
+#pageContainer #intro {
+  background: #fff;
+  box-shadow: none;
+  border: 0;
+}
+#pageContainer #intro h2 {
+  font-size: 22px;
+  line-height: 30px;
+}
+#pageContainer #intro .btn {
+  margin-top: 3em;
+}
+#pageContainer #trending {
+  background: url("../images/flag-bg.jpg") center center;
+  background-size: cover;
+  padding: 30px 0 50px 0;
+  border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+  border-top: 7px solid rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+#pageContainer #latest {
+  background: #ddd;
+}
+#pageContainer #latest h2 {
+  margin: 30px 0;
+}
+#pageContainer #latest h2.center-title span {
+  background: #ddd;
+}
+/* Mobile ((Portrait) ------------------------------------- */
+@media only screen and (max-width: 480px) {
+  #top-politicians .politician {
+    border-top: 3px solid #000;
+  }
+}

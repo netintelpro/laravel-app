@@ -1,0 +1,140 @@
+
+#headerContainer {
+  background: url("../images/header-bg.png");
+  border-bottom: 1px solid #999;
+  position: fixed;
+  margin-top: -97px;
+  z-index: 2000;
+
+  #accountContainer {
+    background: #000;
+    
+    .menu {
+      float: right;
+    }
+    a {
+      border-right: 1px solid #ddd;
+      color: #ddd;
+      font-size: 13px;
+      line-height: 1em;
+      margin: 6px 0;
+      padding: 1px 7px;
+      display: block;
+    }
+    li:last-child a {
+      border: 0;
+      padding-right: 0;
+    }
+  }
+  
+  #header {
+    display: block;
+  }
+  
+  #logo {
+  	float: left;
+  	max-height: 50px;
+  	width: auto;
+    margin: 10px 0;
+  }
+  
+  #search {
+    margin: 10px 0 0 0;
+    
+    .form-group, .form-control {
+      clear: both;
+      position: relative;
+      width: 100%;
+    }
+    .form-control {
+      border: 1px solid #000;
+      .border-radius(0px);
+    }
+    .form-control:focus {
+      box-shadow: 0 0 8px @yellow;
+    }
+    .sprite {
+      background-color: #fff;
+      position: absolute;
+      right: 10px;
+      top: 11px;
+      padding-left: 2px;
+    }
+  }
+  
+  #nav {
+    float: right;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 16px;
+
+    ul {
+       margin: 0 auto;
+    }
+     ul li {
+       position: relative;
+    }
+     a {
+      color: #000;
+      display: block;
+      padding: 10px 12px;
+      margin-right: 4px;
+      text-decoration: none;
+      position: relative;
+    }
+     .selected {
+       color: #555;
+    }
+     a:hover,  a:active,  li:hover {
+       color: #6f5703;
+    }
+    
+    li ul.sub-menu {
+       border: 1px solid #59768c;
+       border-top: 0;
+       position: absolute;
+       top: 33px;
+       left: 0;
+       z-index: 2000;
+       width: 201px;
+       
+      li {
+         border-left: 1px solid #59768c;
+         background: none;
+         clear: both;
+         font-size: .9em;
+         text-align: left;
+         width: 204px;
+      }
+      a {
+         background: #7d9db4;
+         border-top: 1px solid #59768c;
+         padding: 8px 12px;
+      }
+      a:hover, a:active {
+         background: #59768c;
+      }
+    }
+   
+     li ul.sub-menu {
+       display: none;
+    }
+     li:hover ul.sub-menu {
+       display: block;
+    }
+  }
+  
+
+  
+  .mobile-nav {
+    background: url("/images/mobile-nav.png") center center no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 10px 10px 0 0;  
+    display: none;
+    float: right;
+    z-index: 1000;
+  }
+}

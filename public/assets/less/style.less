@@ -1,0 +1,245 @@
+@import "variables.less";
+
+
+/* -------- begin html tag settings --------- */
+BODY {
+	background: #555;
+	color: #333;
+	font-family: @bodyfont;
+	line-height: 1em;
+	text-align: center;
+	padding-top: 97px;
+}
+TD {
+	padding: 4px;
+}
+h1, h2, h3, h4, h5 { 
+	font-family: @headerfont;
+	font-weight: normal;
+	line-height: 1.2em;
+	margin: 0 0 .2em 0;
+	padding: 0;
+	
+	span {
+  	font-style: italic;
+	}
+}
+h1 {
+	color: #000;
+	font-size: 36px;
+}
+h2 {
+	color: #000;
+	font-size: 30px;
+}
+h2.center-title {
+  background: #c6c6c6;
+  text-align: center;
+  height: 10px;
+  line-height: 10px;
+  margin-bottom: 1.5em;
+}
+h2.center-title span {
+  background: #fff;
+  padding: 0 6px;
+  font-style: normal;
+}
+h3 {
+	color: #000;
+	font-family: @sansfont;
+	font-size: 22px;
+}
+h3.popover-title {
+  font-family: @headerfont;
+  background: @light-yellow;
+}
+.popover.bottom > .arrow:after {
+  border-bottom-color: @light-yellow;
+}
+h4 {
+	color: #91BAB3;
+	font-size: 18px;
+	margin: 1em 0;
+}
+h5 {
+	color: #D6AD0C;
+	font-size: 16px;
+}
+ul {
+	list-style-image: url("../images/double-arrow.png");
+	margin: 0 0 1em 0;
+}
+ol {
+	list-style: decimal;
+	margin: 0 0 1em 1.5em;
+}
+ul > li, ol > li {
+  margin-bottom: 1em;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-bottom: 0;
+}
+p, li, blockquote {
+	line-height: 1.2em;
+	margin: 0 0 1em 0;
+}
+.list-unstyled {
+  margin-left: 0;
+}
+a {
+	color: @dark-yellow;
+	cursor: pointer;
+}
+a:visited {
+	color: @dark-yellow;
+}
+a:hover, a:active {
+	color: #300;
+	text-decoration: none;
+}
+hr {display: none;}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+	background: #f9f9f9;
+	border: 1px solid #ccc;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	font-size: 1em;
+	padding: 4px;
+}
+
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	position: absolute;
+	left: -9000px;
+}
+
+
+
+
+/* ---------- begin structural settings ---------------- */
+#container { 
+	font-size: 16px;
+	float: left;
+	margin: 0 auto;
+	width: 100%;
+}
+section, .section {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+#pageContainer section {
+  padding: @standard-padding;
+}
+#pageContainer section:last-child {
+  padding-bottom: 70px;
+}
+.container {
+  position: relative;
+  text-align: left;
+}
+
+@import "header.less";
+
+#pageContainer {
+	background: #fff; 
+	text-align: left;
+}
+
+
+
+#sidebar {
+	float: right;
+	margin: 50px 0;
+	width: 25%;
+}
+#sidebar h2 {
+	padding: 20px 0 0 0;
+}
+#sidebar ul li {
+	width: 100%; /* for ie 7 */
+}
+
+@import "footer.less";
+
+.nav, .nav ul, .menu, .menu ul  {
+	margin: 0;
+	padding: 0;
+}
+.nav li, .menu li {
+	float: left;
+	list-style: none;
+	margin: 0;
+}
+.nav a, .menu a {
+	text-decoration: none;
+}
+.hide {display: none;}
+.date, .help {
+	color: #777;
+	font-size: .9em;
+}
+
+
+.divider {
+  border-bottom: 3px dashed @dark-yellow;
+  clear: both;
+  margin-bottom: 16px;
+  padding-top: 4px;
+}
+.popover,.popover[class*="tour-"] {
+  z-index: 10000;
+}
+
+#recommended {
+  background: @light-yellow;
+  border-top: 10px solid darken(@light-yellow,10%);
+  border-bottom: 10px solid darken(@light-yellow,10%);
+  padding: 30px 0 30px 0;
+  
+  h3 {
+    margin: 4px 0 0 0;
+  }
+}
+
+
+@import "buttons.less";
+
+@import "sprites.less";
+
+@import "images.less";
+
+@import "intro.less";
+
+
+#slider,
+.cs {
+  background: #eee;
+  overflow: hidden;
+  width: 100%;
+}
+
+@import "box-items.less";
+
+@import "comments.less";
+
+.lpcodekit-loading * {
+  transition: none !important;
+}

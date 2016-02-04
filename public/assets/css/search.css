@@ -1,0 +1,23 @@
+/* colors */
+.border-divider {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+.thick-top-border {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 5px solid #eee;
+}
+.thick-bottom-border {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid #eee;
+}
+/* boxes */
+/* gradients */
+#pageContainer #results .box-item h3 {
+  margin: 0;
+}
+#pageContainer #results .box-item .topics {
+  background: #eee;
+}
